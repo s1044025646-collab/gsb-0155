@@ -1,0 +1,7 @@
+{
+  "reads": [
+    { "readCode": "r1", "seq": "ACGTACGTT" },
+    { "readCode": "r2", "seq": "GTACGTTAC" },
+    { "readCode": "r3", "seq": "CGTTACGGT" }
+  ]
+}

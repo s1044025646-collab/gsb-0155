@@ -1,0 +1,19 @@
+{
+  "name": "dna-assembler",
+  "version": "1.0.0",
+  "description": "Windows-local DNA short-read de Bruijn assembler with branch ambiguity tracking (API + CLI, no web UI)",
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=22.18.0"
+  },
+  "bin": {
+    "dna": "src/cli.ts"
+  },
+  "scripts": {
+    "start": "node src/cli.ts serve",
+    "stop": "node src/cli.ts stop",
+    "demo": "node src/demo.ts",
+    "test": "node --test --test-reporter=spec test/unit.test.ts test/assembler.test.ts test/api.test.ts"
+  }
+}
