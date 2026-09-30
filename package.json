@@ -1,0 +1,24 @@
+{
+ "name": "dna-assembly-backend",
+ "version": "1.0.0",
+ "description": "Local DNA short-read assembly backend with de Bruijn graph and branch ambiguity tracking (API + CLI).",
+ "type": "module",
+ "engines": {
+  "node": ">=22.5.0"
+ },
+ "scripts": {
+  "build": "tsc -p tsconfig.json",
+  "start": "tsx scripts/serve.ts",
+  "dev": "tsx src/server.ts",
+  "demo": "tsx scripts/demo.ts",
+  "stop": "tsx scripts/stop.ts",
+  "cli": "tsx src/cli.ts",
+  "test": "node --import tsx --test tests/*.test.ts"
+ },
+ "license": "MIT",
+ "devDependencies": {
+  "@types/node": "^22.10.0",
+  "tsx": "^4.19.2",
+  "typescript": "^5.7.2"
+ }
+}
